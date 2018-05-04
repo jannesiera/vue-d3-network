@@ -32,7 +32,7 @@
           :width='getNodeSize(node, "width")'
           :height='getNodeSize(node, "height")' 
           @click='emit("nodeClick",[$event,node])'
-          @dblclick='emit("nodeDblClick",[$event,node])'
+          @dblclick.native='emit("nodeDblClick",[$event,node])'
           @touchend.passive='emit("nodeClick",[$event,node])'
           @mousedown.prevent='emit("dragStart",[$event,key])'
           @touchstart.passive='emit("dragStart",[$event,key])'

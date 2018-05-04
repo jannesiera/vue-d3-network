@@ -50,6 +50,7 @@
         :key='key'
         :r="getNodeSize(node) / 2" 
         @click='emit("nodeClick",[$event,node])'
+        @dblclick.native='emit("nodeDblClick",[$event,node])'
         @touchend.passive='emit("nodeClick",[$event,node])'
         @mousedown.prevent='emit("dragStart",[$event,key])'
         @touchstart.passive='emit("dragStart",[$event,key])'

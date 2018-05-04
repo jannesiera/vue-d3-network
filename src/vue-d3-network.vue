@@ -365,6 +365,9 @@ export default {
     nodeClick (event, node) {
       this.$emit('node-click', event, node)
     },
+    nodeDblClick (event, node) {
+      this.$emit('node-double-click', event, node)
+    },
     linkClick (event, link) {
       this.$emit('link-click', event, link)
     },
